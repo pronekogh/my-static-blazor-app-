@@ -1,0 +1,54 @@
+﻿<h3>McpBage03</h3>
+
+@page "/mcpbages"
+
+<div class="mcpbages-container">
+    <ul class="mcpbages-list">
+        @foreach (var imageName in ImageNames)
+        {
+            <li class="mcpbage-item" style="background-image: url('/img/pizzas/@imageName')"></li>
+        }
+    </ul>
+</div>
+
+@code {
+    private readonly string[] ImageNames = new string[]
+    {
+        //"incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png", "incomesoftdiscord.png",
+      "image.png",
+"azure-solutions-architect-expert-600x600.png",
+"image (1).png",
+"CERT-Associate-Microsoft365-Teams-Administrator.png",
+"dynamics365-fundamentals-erp-600x600.png",
+"dynamics365-fundamentals-crm-600x600.png",
+"CERT-Expert-DevOps-Engineer-600x600.png",
+"exam-az400-600x600.png",
+"azure-security-engineer-associate600x600.png",
+"security-compliance-and-identity-fundamentals-600x600.png",
+"azure-developer-associate-600x600.png",
+"image (2).png",
+"azure-administrator-associate-600x600.png",
+"CERT-Fundamentals-Power-Platform.png",
+"azure-ai-fundamentals-600x600.png",
+"azure-data-fundamentals-600x600.png",
+"image (3).png",
+"ccna_600.png",
+"MCSE_Cloud_Platform_and_Infrastructure-01.png",
+"MCSA_Cloud_Platform-01.png",
+"Microsoft_Exam534.png",
+"Microsoft_Exam533.png",
+"MCSA_Office_365-01.png",
+"Enabling_Office_365_Services-01.png",
+"Managing_Office_365_Identities_and_Requirements-01.png",
+"Exam_414-01.png",
+"Exam_413-01.png",
+"Configuring_Advanced_Windows_Server_2012_Services-01.png",
+"MCSA_Windows_Server_2012-01.png",
+"Administering_Windows_Server_2012-01.png",
+"Installing_and_Configuring_Windows_Server_2012-01.png",
+"Administering_Microsoft_SQL_Server_2012.2014_Databases-01.png",
+"Programming_in_HTML5_with_JavaScript_and_Css3-01.png"
+
+    };
+}
+
